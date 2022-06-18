@@ -17,8 +17,7 @@ class _CadastroState extends State<Cadastro> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: NetworkImage(
-                "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-1366919.jpg&fm=jpg"),
+            image: AssetImage("assets/images/estante.png"),
             fit: BoxFit.cover,
           ),
         ),
