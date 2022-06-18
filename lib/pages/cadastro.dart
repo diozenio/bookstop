@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class Cadastro extends StatefulWidget {
@@ -39,32 +41,113 @@ class _CadastroState extends State<Cadastro> {
               child: Container(
                 width: double.infinity,
                 child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    children: [
-                      Form(
-                        autovalidateMode: AutovalidateMode.always,
-                        child: TextFormField(
-                          autofocus: true,
-                          style: TextStyle(color: Color(0xFF292525)),
-                          decoration: InputDecoration(
-                              hintText: "E-mail",
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                borderSide: BorderSide(
-                                  width: 0,
-                                  style: BorderStyle.none,
-                                ),
+                  padding: const EdgeInsets.fromLTRB(30, 50, 30, 0),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          child: Column(children: [
+                            Form(
+                              autovalidateMode: AutovalidateMode.always,
+                              child: TextFormField(
+                                autofocus: true,
+                                style: TextStyle(
+                                    color: Color(0xFF292525),
+                                    fontFamily: "Roboto",
+                                    fontWeight: FontWeight.w100),
+                                decoration: InputDecoration(
+                                    hintText: "Nome de usuário",
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(20),
+                                      borderSide: BorderSide(
+                                        width: 0,
+                                        style: BorderStyle.none,
+                                      ),
+                                    ),
+                                    fillColor: Color(0xFFDCDDBC),
+                                    filled: true,
+                                    contentPadding: EdgeInsets.all(25)),
                               ),
-                              fillColor: Color(0xFFDCDDBC),
-                              filled: true,
-                              contentPadding: EdgeInsets.all(25)),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Form(
+                              autovalidateMode: AutovalidateMode.always,
+                              child: TextFormField(
+                                keyboardType: TextInputType.emailAddress,
+                                autofocus: true,
+                                style: TextStyle(
+                                    color: Color(0xFF292525),
+                                    fontFamily: "Roboto",
+                                    fontWeight: FontWeight.w100),
+                                decoration: InputDecoration(
+                                    hintText: "E-mail",
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(20),
+                                      borderSide: BorderSide(
+                                        width: 0,
+                                        style: BorderStyle.none,
+                                      ),
+                                    ),
+                                    fillColor: Color(0xFFDCDDBC),
+                                    filled: true,
+                                    contentPadding: EdgeInsets.all(25)),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Form(
+                              autovalidateMode: AutovalidateMode.always,
+                              child: TextFormField(
+                                obscureText: true,
+                                keyboardType: TextInputType.visiblePassword,
+                                autofocus: true,
+                                style: TextStyle(
+                                    color: Color(0xFF292525),
+                                    fontFamily: "Roboto",
+                                    fontWeight: FontWeight.w100),
+                                decoration: InputDecoration(
+                                    hintText: "Senha",
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(20),
+                                      borderSide: BorderSide(
+                                        width: 0,
+                                        style: BorderStyle.none,
+                                      ),
+                                    ),
+                                    fillColor: Color(0xFFDCDDBC),
+                                    filled: true,
+                                    contentPadding: EdgeInsets.all(25)),
+                              ),
+                            ),
+                          ]),
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      )
-                    ],
+                        Container(
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFD2D9D2),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: TextButton(
+                              onPressed: () {},
+                              child: Padding(
+                                padding: EdgeInsets.all(16),
+                                child: Text(
+                                  "Criar conta",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: "Roboto",
+                                      fontSize: 16),
+                                ),
+                              )),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 decoration: BoxDecoration(
