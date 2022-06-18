@@ -37,12 +37,43 @@ class _CadastroState extends State<Cadastro> {
             Expanded(
               flex: 6,
               child: Container(
-                  decoration: BoxDecoration(
-                color: Color(0xFFF2F2F2),
-                borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(16),
-                    topRight: Radius.circular(16)),
-              )),
+                width: double.infinity,
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    children: [
+                      Form(
+                        autovalidateMode: AutovalidateMode.always,
+                        child: TextFormField(
+                          autofocus: true,
+                          style: TextStyle(color: Color(0xFF292525)),
+                          decoration: InputDecoration(
+                              hintText: "E-mail",
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20),
+                                borderSide: BorderSide(
+                                  width: 0,
+                                  style: BorderStyle.none,
+                                ),
+                              ),
+                              fillColor: Color(0xFFDCDDBC),
+                              filled: true,
+                              contentPadding: EdgeInsets.all(25)),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      )
+                    ],
+                  ),
+                ),
+                decoration: BoxDecoration(
+                  color: Color(0xFFF2F2F2),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16)),
+                ),
+              ),
             ),
           ],
         ),
