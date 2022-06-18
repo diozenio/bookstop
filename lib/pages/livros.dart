@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:bookstop/pages/widgets/cardlivros.dart';
 
 class Livros extends StatefulWidget {
   const Livros({Key? key}) : super(key: key);
