@@ -20,6 +20,7 @@ class _LivrosState extends State<Livros> {
           children: [
             Expanded(
               flex: 1,
+              // ignore: avoid_unnecessary_containers
               child: Container(
                 child: Center(
                   // ignore: prefer_const_literals_to_create_immutables
