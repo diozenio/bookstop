@@ -5,5 +5,6 @@ import 'package:bookstop/pages/livros.dart';
 void main() {
   runApp(const MaterialApp(
     home: Livros(),
+    debugShowCheckedModeBanner: false,
   ));
 }
