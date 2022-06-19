@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class Livro extends StatefulWidget {
@@ -30,6 +32,7 @@ class _LivroState extends State<Livro> {
                       "Redes de Computadores - Gabriel Torres",
                       style: TextStyle(
                           fontFamily: "Times New Roman",
+                          color: Color(0xff333333),
                           fontWeight: FontWeight.bold,
                           fontSize: 16),
                     ),
@@ -38,7 +41,10 @@ class _LivroState extends State<Livro> {
                     padding: const EdgeInsets.only(left: 10, top: 4),
                     child: Text(
                       "Redes de Computadores",
-                      style: TextStyle(fontFamily: "Times New Roman", fontSize: 14),
+                      style: TextStyle(
+                          fontFamily: "Times New Roman",
+                          color: Color(0xff999999),
+                          fontSize: 14),
                     ),
                   ),
                 ],
@@ -46,7 +52,9 @@ class _LivroState extends State<Livro> {
             ),
           ],
         ),
-        SizedBox(height: 15,)
+        SizedBox(
+          height: 15,
+        )
       ],
     );
   }
