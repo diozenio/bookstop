@@ -11,7 +11,7 @@ class _MateriaState extends State<Materia> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: Color(0xFFF5F5F5),
       body: Center(
 
         child: ListView(
@@ -23,21 +23,25 @@ class _MateriaState extends State<Materia> {
             children: [
               Container(
                 margin: EdgeInsets.all(20.0),
-                padding: EdgeInsets.all(10.0),
-                child: Text('Matérias',
-                  textAlign: TextAlign.start,
+                padding: EdgeInsets.all(25.0),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Text('Livros Recomendados',
                   style: TextStyle(
-                    fontSize: 30,
+                    letterSpacing: 1.0,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                )
               ),
               ElevatedButton(
-                onPressed: null,
+                onPressed: (){},
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(210.0, 50.0),
-                  maximumSize: Size(240.0, 50.0),
-                  onSurface: Colors.lightGreenAccent,
+                  maximumSize: Size(300.0, 70.0),
+                  primary: Color(0xFFD7D9B0),
+                  onPrimary: Colors.black,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10))
                   )
@@ -48,6 +52,7 @@ class _MateriaState extends State<Materia> {
                   textAlign: TextAlign.left, 
                   style: TextStyle(
                     color: Colors.white,
+                    fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
                   ),
@@ -55,11 +60,12 @@ class _MateriaState extends State<Materia> {
                 ),
                 SizedBox(height: 20.0),
               ElevatedButton(
-                onPressed: null,
+                onPressed: (){},
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(210.0, 50.0),
-                  maximumSize: Size(240.0, 50.0),
-                  onSurface: Color.fromARGB(255, 180, 63, 21),
+                  maximumSize: Size(300.0, 70.0),
+                  primary: Color(0xFFD9B79A),
+                  onPrimary: Colors.black,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10))
                   )
@@ -77,11 +83,12 @@ class _MateriaState extends State<Materia> {
               ),
                 SizedBox(height: 20.0),
               ElevatedButton(
-                onPressed: null,
+                onPressed: (){},
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(210.0, 50.0),
-                  maximumSize: Size(240.0, 50.0),
-                  onSurface: Colors.blueGrey,
+                  maximumSize: Size(300.0, 70.0),
+                  primary: Color(0xFFD2D9D2),
+                  onPrimary: Colors.black,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10))
                   )
@@ -99,11 +106,12 @@ class _MateriaState extends State<Materia> {
                 ),
                 SizedBox(height: 20.0),
               ElevatedButton(
-                onPressed: null,
+                onPressed: (){},
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(210.0, 50.0),
-                  maximumSize: Size(240.0, 50.0),
-                  onSurface: Colors.yellowAccent,
+                  maximumSize: Size(300.0, 70.0),
+                  primary: Color(0xFFF2DCB3),
+                  onPrimary: Colors.black,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10))
                   )
@@ -121,33 +129,12 @@ class _MateriaState extends State<Materia> {
                 ),
                 SizedBox(height: 20.0),
               ElevatedButton(
-                onPressed: null,
+                onPressed: (){},
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(210.0, 50.0),
-                  maximumSize: Size(240.0, 50.0),
-                  onSurface: Color.fromARGB(255, 89, 236, 255),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10))
-                  )
-                ),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text( 'Dart',
-                  textAlign: TextAlign.left, 
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                  ),
-                  ),
-                )
-                ),
-                SizedBox(height: 20.0),
-              ElevatedButton(
-                onPressed: null,
-                style: ElevatedButton.styleFrom(
-                  minimumSize: Size(210.0, 50.0),
-                  maximumSize: Size(240.0, 50.0),
-                  onSurface: Color.fromARGB(255, 255, 89, 166),
+                  maximumSize: Size(300.0, 70.0),
+                  primary: Color(0xFFF2F2F2),
+                  onPrimary: Colors.black,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10))
                   )
@@ -157,7 +144,7 @@ class _MateriaState extends State<Materia> {
                   child: Text( 'Infraestrutura de redes',
                   textAlign: TextAlign.left, 
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color(0xFFD9B79A),
                     fontSize: 16,
                   ),
                   ),
