@@ -17,137 +17,154 @@ class _MateriaState extends State<Materia> {
         child: ListView(
           children:[ 
         Container(
-          padding: EdgeInsets.all(20.0),
+          padding: EdgeInsets.all(0.0),
           margin: EdgeInsets.all(20.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Container(
+                margin: EdgeInsets.all(20.0),
+                padding: EdgeInsets.all(10.0),
+                child: Text('Matérias',
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
               ElevatedButton(
                 onPressed: null,
                 style: ElevatedButton.styleFrom(
-                  minimumSize: Size(250.0, 60.0),
-                  primary: Colors.amberAccent,
-                  onPrimary: Colors.amberAccent,
+                  minimumSize: Size(210.0, 50.0),
+                  maximumSize: Size(240.0, 50.0),
+                  onSurface: Colors.lightGreenAccent,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(30))
+                    borderRadius: BorderRadius.all(Radius.circular(10))
                   )
                 ),
-                child: Text( 'HTML',
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text( 'HTML',
+                  textAlign: TextAlign.left, 
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
                   ),
                   ),
-                ),
-                SizedBox(height: 20.0),
-                ElevatedButton(
-                onPressed: null,
-                style: ElevatedButton.styleFrom(
-                  minimumSize: Size(250.0, 60.0),
-                  primary: Colors.amberAccent,
-                  onPrimary: Colors.amberAccent,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(30))
-                  )
-                ),
-                child: Text( 'JavaScript',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                  ),
-                  ),
-                ),
-                SizedBox(height: 20.0),
-                ElevatedButton(
-                onPressed: null,
-                style: ElevatedButton.styleFrom(
-                  minimumSize: Size(250.0, 60.0),
-                  primary: Colors.amberAccent,
-                  onPrimary: Colors.amberAccent,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(30))
-                  )
-                ),
-                child: Text( 'CSS',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                  ),
-                  ),
-                ),
-                SizedBox(height: 20.0),
-                ElevatedButton(
-                onPressed: null,
-                style: ElevatedButton.styleFrom(
-                  minimumSize: Size(250.0, 60.0),
-                  primary: Colors.amberAccent,
-                  onPrimary: Colors.amberAccent,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(30))
-                  )
-                ),
-                child: Text( 'Infraestrutura de Redes',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                  ),
-                  ),
+                )
                 ),
                 SizedBox(height: 20.0),
               ElevatedButton(
                 onPressed: null,
                 style: ElevatedButton.styleFrom(
-                  minimumSize: Size(250.0, 60.0),
-                  primary: Colors.amberAccent,
-                  onPrimary: Colors.amberAccent,
+                  minimumSize: Size(210.0, 50.0),
+                  maximumSize: Size(240.0, 50.0),
+                  onSurface: Color.fromARGB(255, 180, 63, 21),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(30))
+                    borderRadius: BorderRadius.all(Radius.circular(10))
                   )
                 ),
-                child: Text( 'Java',
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text( 'CSS',
+                  textAlign: TextAlign.left, 
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
                   ),
                   ),
+                )
+              ),
+                SizedBox(height: 20.0),
+              ElevatedButton(
+                onPressed: null,
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(210.0, 50.0),
+                  maximumSize: Size(240.0, 50.0),
+                  onSurface: Colors.blueGrey,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10))
+                  )
+                ),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text( 'JavaScript',
+                  textAlign: TextAlign.left, 
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                  ),
+                )
                 ),
                 SizedBox(height: 20.0),
               ElevatedButton(
                 onPressed: null,
                 style: ElevatedButton.styleFrom(
-                  minimumSize: Size(250.0, 60.0),
-                  primary: Colors.amberAccent,
-                  onPrimary: Colors.amberAccent,
+                  minimumSize: Size(210.0, 50.0),
+                  maximumSize: Size(240.0, 50.0),
+                  onSurface: Colors.yellowAccent,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(30))
+                    borderRadius: BorderRadius.all(Radius.circular(10))
                   )
                 ),
-                child: Text( 'Python',
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text( 'Flutter',
+                  textAlign: TextAlign.left, 
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
                   ),
                   ),
+                )
                 ),
                 SizedBox(height: 20.0),
-                ElevatedButton(
+              ElevatedButton(
                 onPressed: null,
                 style: ElevatedButton.styleFrom(
-                  minimumSize: Size(250.0, 60.0),
-                  primary: Colors.amberAccent,
-                  onPrimary: Colors.amberAccent,
+                  minimumSize: Size(210.0, 50.0),
+                  maximumSize: Size(240.0, 50.0),
+                  onSurface: Color.fromARGB(255, 89, 236, 255),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(30))
+                    borderRadius: BorderRadius.all(Radius.circular(10))
                   )
                 ),
-                child: Text( 'Manutenção de Computadores',
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text( 'Dart',
+                  textAlign: TextAlign.left, 
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
                   ),
                   ),
+                )
                 ),
                 SizedBox(height: 20.0),
+              ElevatedButton(
+                onPressed: null,
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(210.0, 50.0),
+                  maximumSize: Size(240.0, 50.0),
+                  onSurface: Color.fromARGB(255, 255, 89, 166),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10))
+                  )
+                ),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text( 'Infraestrutura de redes',
+                  textAlign: TextAlign.left, 
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                  ),
+                )
+                ),
+                SizedBox(height: 20.0),
+
             ],
           )
         )
