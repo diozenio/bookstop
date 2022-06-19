@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, duplicate_ignore
 
 import 'package:flutter/material.dart';
 
@@ -25,6 +25,7 @@ class _CadastroState extends State<Cadastro> {
           children: [
             Expanded(
                 flex: 2,
+                // ignore: avoid_unnecessary_containers
                 child: Container(
                   child: Center(
                       child: const Text(

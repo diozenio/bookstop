@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, duplicate_ignore, prefer_const_literals_to_create_immutables, use_full_hex_values_for_flutter_colors
+
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -13,7 +15,9 @@ class _LoginState extends State<Login> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Container(
+        // ignore: prefer_const_constructors
         decoration: BoxDecoration(
+          // ignore: prefer_const_constructors
           image: DecorationImage(
             image: AssetImage("assets/images/estante.png"),
             fit: BoxFit.cover,
@@ -35,6 +39,7 @@ class _LoginState extends State<Login> {
                         ),
                         
                         Text('Login',
+                        // ignore: prefer_const_constructors
                         style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
