@@ -32,6 +32,7 @@ class _AssuntoState extends State<Assunto> {
                             letterSpacing: 1.0,
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
+                            fontFamily: "Times New Roman",
                           ),
                         ),
                       )),
@@ -62,6 +63,7 @@ class _AssuntoState extends State<Assunto> {
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
+                                  fontFamily: "Times New Roman",
                                 ),
                               ),
                               Container(
@@ -96,6 +98,7 @@ class _AssuntoState extends State<Assunto> {
                                 'Assunto 2',
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
+                                  fontFamily: "Times New Roman",
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
@@ -136,6 +139,7 @@ class _AssuntoState extends State<Assunto> {
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
+                                  fontFamily: "Times New Roman",
                                 ),
                               ),
                               Container(

@@ -32,6 +32,7 @@ class _MateriaState extends State<Materia> {
                             letterSpacing: 1.0,
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
+                            fontFamily: "Times New Roman",
                           ),
                         ),
                       )),
@@ -60,6 +61,7 @@ class _MateriaState extends State<Materia> {
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
+                            fontFamily: "Times New Roman",
                           ),
                         ),
                       )),
@@ -82,6 +84,7 @@ class _MateriaState extends State<Materia> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 16,
+                            fontFamily: "Times New Roman",
                           ),
                         ),
                       )),
@@ -104,6 +107,7 @@ class _MateriaState extends State<Materia> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 16,
+                            fontFamily: "Times New Roman",
                           ),
                         ),
                       )),
@@ -126,6 +130,7 @@ class _MateriaState extends State<Materia> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 16,
+                            fontFamily: "Times New Roman",
                           ),
                         ),
                       )),
@@ -148,6 +153,7 @@ class _MateriaState extends State<Materia> {
                           style: TextStyle(
                             color: Color(0xFFD9B79A),
                             fontSize: 16,
+                            fontFamily: "Times New Roman",
                           ),
                         ),
                       )),
