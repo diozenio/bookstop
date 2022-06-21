@@ -167,7 +167,7 @@ class _LoginState extends State<Login> {
                                                     fontSize: 16),
                                               ),
                                             ),
-                                            style: TextButton.styleFrom(
+                                            style: ElevatedButton.styleFrom(
                                               primary: Color(0x0FFD9B79A),
                                             ),
                                           ),
