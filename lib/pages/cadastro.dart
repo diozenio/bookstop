@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, duplicate_ignore
 
+import 'package:bookstop/pages/login.dart';
 import 'package:flutter/material.dart';
 
 class Cadastro extends StatefulWidget {
@@ -133,7 +134,13 @@ class _CadastroState extends State<Cadastro> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const Login();
+                                },
+                              ));
+                            },
                             child: Padding(
                               padding: EdgeInsets.all(16),
                               child: Text(
