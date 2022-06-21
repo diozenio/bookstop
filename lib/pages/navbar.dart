@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, duplicate_ignore
 
-import 'package:bookstop/pages/cadastro.dart';
 import 'package:bookstop/pages/biblioteca.dart';
+import 'package:bookstop/pages/materia.dart';
 import 'package:flutter/material.dart';
 
 class Navbar extends StatefulWidget {
@@ -18,7 +18,7 @@ class _NavbarState extends State<Navbar> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     Biblioteca(),
-    Cadastro(),
+    Materia(),
   ];
 
   void _onItemTapped(int index) {

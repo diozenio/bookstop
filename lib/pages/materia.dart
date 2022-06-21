@@ -1,5 +1,4 @@
 import 'package:bookstop/pages/assuntos.dart';
-import 'package:bookstop/pages/navbar.dart';
 import 'package:flutter/material.dart';
 
 class Materia extends StatefulWidget {

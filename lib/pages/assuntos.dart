@@ -1,4 +1,4 @@
-import 'package:bookstop/pages/navbar.dart';
+import 'package:bookstop/pages/livros.dart';
 import 'package:flutter/material.dart';
 
 class Assunto extends StatefulWidget {
@@ -39,7 +39,7 @@ class _AssuntoState extends State<Assunto> {
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(
                           builder: (context) {
-                            return const Assunto();
+                            return const Livros();
                           },
                         ));
                       },
