@@ -51,7 +51,7 @@ class _CadastroState extends State<Cadastro> {
                           Form(
                             autovalidateMode: AutovalidateMode.always,
                             child: TextFormField(
-                              autofocus: true,
+                              autofocus: false,
                               style: TextStyle(
                                   color: Color(0xFF292525),
                                   fontFamily: "Roboto",
@@ -77,7 +77,7 @@ class _CadastroState extends State<Cadastro> {
                             autovalidateMode: AutovalidateMode.always,
                             child: TextFormField(
                               keyboardType: TextInputType.emailAddress,
-                              autofocus: true,
+                              autofocus: false,
                               style: TextStyle(
                                   color: Color(0xFF292525),
                                   fontFamily: "Roboto",
@@ -104,7 +104,7 @@ class _CadastroState extends State<Cadastro> {
                             child: TextFormField(
                               obscureText: true,
                               keyboardType: TextInputType.visiblePassword,
-                              autofocus: true,
+                              autofocus: false,
                               style: TextStyle(
                                   color: Color(0xFF292525),
                                   fontFamily: "Roboto",
