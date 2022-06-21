@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookstop/pages/cadastro.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -79,7 +80,7 @@ class _LoginState extends State<Login> {
                                 ),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(45, 50, 60, 90),
+                                      const EdgeInsets.fromLTRB(5, 30, 5, 30),
                                   child: Column(
                                     children: [
                                       Form(
@@ -139,6 +140,7 @@ class _LoginState extends State<Login> {
                                       ),
                                       Row(
                                         children: [
+                                          
                                           Text(
                                             'Esqueci minha senha',
                                             textAlign: TextAlign.left,
@@ -152,7 +154,7 @@ class _LoginState extends State<Login> {
                                           Padding(
                                             padding: EdgeInsets.all(10),
                                           ),
-                                          TextButton(
+                                          ElevatedButton(
                                             onPressed: () {},
                                             child: Padding(
                                               padding: EdgeInsets.all(10),
@@ -177,17 +179,33 @@ class _LoginState extends State<Login> {
                               ],
                             ),
                           ),
-                          Text(
-                            'Não tem login? cadraste-se',
-                            textAlign: TextAlign.left,
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              color: Color(0x0FF004462),
-                              fontSize: 15,
-                            ),
+                          TextButton(
+                                      child: Text('Não tem login? Cadasre-se',
+                                      textAlign: TextAlign.left,
+                                            style: TextStyle(
+                                              decoration:
+                                                  TextDecoration.underline,
+                                              color: Color(0x0FF004462),
+                                              fontSize: 15,
+                                            ),
+                         ),
+                                      onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return const Cadastro();
+                                },
+                                
+                              )
+                              );
+                                      }
+                                      
                           ),
-                        ]),
-                      ),
+                        ],
+                        ),
+                            
+                          ),    
                       Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
