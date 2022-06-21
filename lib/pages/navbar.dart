@@ -30,22 +30,29 @@ class _NavbarState extends State<Navbar> {
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.auto_stories_outlined),
-            label: 'Biblioteca',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.assistant_outlined),
-            label: 'Recomendações',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
-        onTap: _onItemTapped,
+      bottomNavigationBar: Container(
+        padding: EdgeInsets.all(5),
+        decoration: BoxDecoration(color: Color(0xffD9B79A)),
+        child: BottomNavigationBar(
+          elevation: 0,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.auto_stories_outlined, size: 35),
+              label: 'Biblioteca',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.assistant_outlined, size: 35),
+              label: 'Recomendações',
+            ),
+          ],
+          currentIndex: _selectedIndex,
+          selectedItemColor: Colors.white,
+          backgroundColor: Color(0xffD9B79A),
+          unselectedItemColor: Color(0xffD7D9B0),
+          onTap: _onItemTapped,
+        ),
       ),
     );
   }
