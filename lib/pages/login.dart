@@ -14,7 +14,6 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       body: Container(
         // ignore: prefer_const_constructors
         decoration: BoxDecoration(
@@ -27,198 +26,166 @@ class _LoginState extends State<Login> {
         child: Column(
           children: [
             Expanded(
-              child: Container(
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    // ignore: prefer_const_literals_to_create_immutables
-                    children: [
-                      Center(
-                        child: CircleAvatar(
-                          backgroundColor: Color(0xFFDCDDBC),
-                          backgroundImage:
-                              NetworkImage('https://i.imgur.com/Q1MHtHH.png'),
-                          radius: 60,
-                        ),
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                    Center(
+                      child: CircleAvatar(
+                        backgroundColor: Color(0xFFDCDDBC),
+                        backgroundImage:
+                            NetworkImage('https://i.imgur.com/Q1MHtHH.png'),
+                        radius: 60,
                       ),
-                      Text('Login',
-                          // ignore: prefer_const_constructors
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 30,
-                              fontFamily: "Roboto",
-                              color: Color(0xFF070707)))
-                    ],
-                  ),
+                    ),
+                    Text('Login',
+                        // ignore: prefer_const_constructors
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            fontFamily: "Roboto",
+                            color: Color(0xFF070707)))
+                  ],
                 ),
               ),
             ),
-            Expanded(
+            Container(
               child: Container(
                 width: double.infinity,
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 50, 30, 10),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        child: Column(children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Color(0x0FFE8D9CC),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(16)),
-                            ),
-                            width: double.infinity,
-                            child: Column(
-                              children: [
-                                Text(
-                                  'Faça login com seu e-mail',
-                                  style: TextStyle(
-                                    color: Color(0x0FF2C1810),
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "Roboto",
-                                    fontSize: 16,
-                                  ),
-                                ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(5, 30, 5, 30),
-                                  child: Column(
-                                    children: [
-                                      Form(
-                                        autovalidateMode:
-                                            AutovalidateMode.always,
-                                        child: TextFormField(
-                                          autofocus: true,
-                                          style: TextStyle(
-                                              color: Color(0xFF292525),
-                                              fontFamily: "Roboto",
-                                              fontWeight: FontWeight.w100),
-                                          decoration: InputDecoration(
-                                              hintText: "exemple@email.com",
-                                              border: OutlineInputBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(20),
-                                                borderSide: BorderSide(
-                                                  width: 0,
-                                                  style: BorderStyle.none,
-                                                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                          Padding(
+                            padding: EdgeInsets.all(25),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Color(0x0FFE8D9CC),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(16)),
+                              ),
+                              width: double.infinity,
+                              child: Padding(
+                                padding:
+                                    const EdgeInsets.fromLTRB(10, 25, 10, 25),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      'Faça login com seu e-mail',
+                                      style: TextStyle(
+                                        color: Color(0x0FF2C1810),
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: "Roboto",
+                                        fontSize: 16,
+                                      ),
+                                    ),
+                                    SizedBox(height: 15,),
+                                    Form(
+                                      autovalidateMode: AutovalidateMode.always,
+                                      child: TextFormField(
+                                        style: TextStyle(
+                                            color: Color(0xFF292525),
+                                            fontFamily: "Roboto",
+                                            fontWeight: FontWeight.w100),
+                                        decoration: InputDecoration(
+                                            hintText: "exemple@email.com",
+                                            border: OutlineInputBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(20),
+                                              borderSide: BorderSide(
+                                                width: 0,
+                                                style: BorderStyle.none,
                                               ),
-                                              fillColor: Color(0xFFDCDDBC),
-                                              filled: true,
-                                              contentPadding:
-                                                  EdgeInsets.all(25)),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 20,
-                                      ),
-                                      Form(
-                                        autovalidateMode:
-                                            AutovalidateMode.always,
-                                        child: TextFormField(
-                                          keyboardType:
-                                              TextInputType.emailAddress,
-                                          autofocus: true,
-                                          style: TextStyle(
-                                              color: Color(0xFF292525),
-                                              fontFamily: "Roboto",
-                                              fontWeight: FontWeight.w100),
-                                          decoration: InputDecoration(
-                                              hintText: "**********",
-                                              border: OutlineInputBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(20),
-                                                borderSide: BorderSide(
-                                                  width: 0,
-                                                  style: BorderStyle.none,
-                                                ),
-                                              ),
-                                              fillColor: Color(0xFFDCDDBC),
-                                              filled: true,
-                                              contentPadding:
-                                                  EdgeInsets.all(25)),
-                                        ),
-                                      ),
-                                      Row(
-                                        children: [
-                                          
-                                          Text(
-                                            'Esqueci minha senha',
-                                            textAlign: TextAlign.left,
-                                            style: TextStyle(
-                                              decoration:
-                                                  TextDecoration.underline,
-                                              color: Color(0x0FF004462),
-                                              fontSize: 15,
                                             ),
+                                            fillColor: Color(0xFFDCDDBC),
+                                            filled: true,
+                                            contentPadding: EdgeInsets.all(25)),
+                                      ),
+                                    ),
+                                    SizedBox(height: 10,),
+                                    Form(
+                                      autovalidateMode: AutovalidateMode.always,
+                                      child: TextFormField(
+                                        keyboardType:
+                                            TextInputType.emailAddress,
+                                        style: TextStyle(
+                                            color: Color(0xFF292525),
+                                            fontFamily: "Roboto",
+                                            fontWeight: FontWeight.w100),
+                                        decoration: InputDecoration(
+                                            hintText: "**********",
+                                            border: OutlineInputBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(20),
+                                              borderSide: BorderSide(
+                                                width: 0,
+                                                style: BorderStyle.none,
+                                              ),
+                                            ),
+                                            fillColor: Color(0xFFDCDDBC),
+                                            filled: true,
+                                            contentPadding: EdgeInsets.all(25)),
+                                      ),
+                                    ),
+                                    SizedBox(height: 10,),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          'Esqueci minha senha',
+                                          textAlign: TextAlign.left,
+                                          style: TextStyle(
+                                            decoration:
+                                                TextDecoration.underline,
+                                            color: Color(0x0FF004462),
+                                            fontSize: 15,
                                           ),
-                                          Padding(
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(10),
+                                        ),
+                                        ElevatedButton(
+                                          onPressed: () {},
+                                          child: Padding(
                                             padding: EdgeInsets.all(10),
-                                          ),
-                                          ElevatedButton(
-                                            onPressed: () {},
-                                            child: Padding(
-                                              padding: EdgeInsets.all(10),
-                                              child: Text(
-                                                "Login",
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontWeight: FontWeight.bold,
-                                                    fontFamily: "Roboto",
-                                                    fontSize: 16),
-                                              ),
-                                            ),
-                                            style: ElevatedButton.styleFrom(
-                                              primary: Color(0x0FFD9B79A),
+                                            child: Text(
+                                              "Login",
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontFamily: "Roboto",
+                                                  fontSize: 16),
                                             ),
                                           ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
+                                          style: ElevatedButton.styleFrom(
+                                            primary: Color(0x0FFD9B79A),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
                                 ),
-                              ],
+                              ),
                             ),
                           ),
                           TextButton(
-                                      child: Text('Não tem login? Cadasre-se',
-                                      textAlign: TextAlign.left,
-                                            style: TextStyle(
-                                              decoration:
-                                                  TextDecoration.underline,
-                                              color: Color(0x0FF004462),
-                                              fontSize: 15,
-                                            ),
-                         ),
-                                      onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return const Cadastro();
-                                },
-                                
-                              )
-                              );
-                                      }
-                                      
-                          ),
+                              child: Text(
+                                'Não tem login? Cadasre-se',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  color: Color(0x0FF004462),
+                                  fontSize: 15,
+                                ),
+                              ),
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(
+                                  builder: (context) {
+                                    return const Cadastro();
+                                  },
+                                ));
+                              }),
                         ],
-                        ),
-                            
-                          ),    
-                      Container(
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          color: Color(0xFFD2D9D2),
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                      ),
-                    ],
-                  ),
                 ),
                 decoration: BoxDecoration(
                   color: Color(0xFFF2F2F2),
