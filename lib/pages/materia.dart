@@ -1,3 +1,4 @@
+import 'package:bookstop/pages/assuntos.dart';
 import 'package:bookstop/pages/navbar.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +40,7 @@ class _MateriaState extends State<Materia> {
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(
                           builder: (context) {
-                            return const Navbar();
+                            return const Assunto();
                           },
                         ));
                       },
