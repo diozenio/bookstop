@@ -3,7 +3,16 @@
 import 'package:flutter/material.dart';
 
 class Livro extends StatefulWidget {
-  const Livro({Key? key}) : super(key: key);
+  final String imagem;
+  final String titulo;
+  final String materia;
+
+  const Livro({
+    Key? key,
+    required this.imagem,
+    required this.titulo,
+    required this.materia,
+  }) : super(key: key);
 
   @override
   State<Livro> createState() => _LivroState();
@@ -18,8 +27,8 @@ class _LivroState extends State<Livro> {
           children: [
             CircleAvatar(
               radius: 40,
-              backgroundImage: NetworkImage(
-                  "https://http2.mlstatic.com/D_NQ_NP_714602-MLB48701262639_122021-O.jpg"),
+              backgroundImage: NetworkImage(widget.imagem),
+              // "https://http2.mlstatic.com/D_NQ_NP_714602-MLB48701262639_122021-O.jpg"),
             ),
             Expanded(
               child: Column(
@@ -29,7 +38,7 @@ class _LivroState extends State<Livro> {
                   Padding(
                     padding: const EdgeInsets.only(left: 10),
                     child: Text(
-                      "Redes de Computadores - Gabriel Torres",
+                      widget.titulo,
                       style: TextStyle(
                           fontFamily: "Times New Roman",
                           color: Color(0xff333333),
@@ -40,7 +49,7 @@ class _LivroState extends State<Livro> {
                   Padding(
                     padding: const EdgeInsets.only(left: 10, top: 4),
                     child: Text(
-                      "Redes de Computadores",
+                      widget.materia,
                       style: TextStyle(
                           fontFamily: "Times New Roman",
                           color: Color(0xff999999),
