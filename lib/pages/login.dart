@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:bookstop/pages/cadastro.dart';
 
@@ -29,11 +31,13 @@ class _LoginState extends State<Login> {
                 child: Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    // ignore: prefer_const_literals_to_create_immutables
                     children: [
                       Center(
                         child: CircleAvatar(
+                          backgroundColor: Color(0xFFDCDDBC),
                           backgroundImage:
-                              NetworkImage('https://imgur.com/Q1MHtHH'),
+                              NetworkImage('https://i.imgur.com/Q1MHtHH.png'),
                           radius: 60,
                         ),
                       ),
