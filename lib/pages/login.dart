@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:bookstop/pages/cadastro.dart';
+import 'package:bookstop/pages/navbar.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -145,7 +146,13 @@ class _LoginState extends State<Login> {
                                           padding: EdgeInsets.all(10),
                                         ),
                                         ElevatedButton(
-                                          onPressed: () {},
+                                          onPressed: () {
+                                          Navigator.push(context, MaterialPageRoute(
+                                  builder: (context) {
+                                    return const Navbar ();
+                                  },
+                                ));
+                                          },
                                           child: Padding(
                                             padding: EdgeInsets.all(10),
                                             child: Text(
