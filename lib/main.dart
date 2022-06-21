@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:bookstop/pages/cadastro.dart';
 import 'package:bookstop/pages/login.dart';
+import 'package:bookstop/pages/navbar.dart';
 
 void main() {
   runApp(const MaterialApp(
