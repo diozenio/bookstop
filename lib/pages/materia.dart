@@ -36,7 +36,15 @@ class _MateriaState extends State<Materia> {
                 )
               ),
               ElevatedButton(
-                onPressed: (){},
+                onPressed: (){
+                   Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context){
+                      return Assunto();
+                    }
+                    )
+                  )
+                },
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(210.0, 50.0),
                   maximumSize: Size(300.0, 70.0),
