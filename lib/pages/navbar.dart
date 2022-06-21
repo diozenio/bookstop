@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, duplicate_ignore
+
 import 'package:bookstop/pages/cadastro.dart';
 import 'package:bookstop/pages/biblioteca.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +13,7 @@ class Navbar extends StatefulWidget {
 
 class _NavbarState extends State<Navbar> {
   int _selectedIndex = 0;
+  // ignore: unused_field
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
@@ -31,6 +34,7 @@ class _NavbarState extends State<Navbar> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: Container(
+        // ignore: prefer_const_constructors
         padding: EdgeInsets.all(5),
         decoration: BoxDecoration(color: Color(0xffD9B79A)),
         child: BottomNavigationBar(
